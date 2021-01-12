@@ -1,5 +1,5 @@
 function howManyHundreds(num){
-return num%10
+return num%100
 }
 
 //console.log(howManyHundreds(894))
