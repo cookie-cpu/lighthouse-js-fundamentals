@@ -15,19 +15,19 @@ const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north'];
 
 function finalPosition(moves) {
   const position = [0, 0];
-  let x = position[0];
-  let y = position[1];
+  //let x = position[0];
+  //let y = position[1];
 
 
   for (var move in moves) {
     if (move === "north") {
-      y++
+      position[1]++
     } else if (move === "south") {
-      y--
+      position[1]--
     } else if (move === "west"){
-      x--
+      position[0]--
     }else if (move === "east"){
-      x++
+      position[0]++
     }
   }
   return position
@@ -35,6 +35,3 @@ function finalPosition(moves) {
 
 
 console.log(finalPosition(moves))
-
-
-//console.log(moves[move]
