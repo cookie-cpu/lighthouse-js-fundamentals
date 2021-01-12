@@ -16,17 +16,17 @@ const stations = [
 
 
 function chooseStations(stations) {
-  const acceptable = [];
+  const acceptable = []; //Creates an array to store the name element for acceptable venues
 
-  for (const station of stations) {
+  for (const station of stations) { //loops through each element in the stations[] array
 
-    const capacity = station[1]
+    const capacity = station[1] //defines a variable to handle the capacity element of the array
 
-    if (capacity >= 20) {
+    if (capacity >= 20) { //check to see if the capacity element is over 20
 
-      const type = station[2]
-      if (type === 'school' || type === 'community centre') {
-        acceptable.push(station[0])
+      const type = station[2] //defines a variable to handle the type of venue
+      if (type === 'school' || type === 'community centre') { //check to see if the type element is acceptable
+        acceptable.push(station[0]) //this pushes the name element to the acceptable[] array for output
 
       }
     }
@@ -36,4 +36,4 @@ function chooseStations(stations) {
 
 
 
-console.log(chooseStations(stations));
+console.log(chooseStations(stations)); //prints the new array of sorted venues for voting
