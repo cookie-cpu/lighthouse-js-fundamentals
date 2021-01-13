@@ -13,9 +13,11 @@ The function should return an empty array [] if given incorrect parameters, such
 
 
 */
+let array = [];
 
+function range (start, end, step){
 
-
+}
 
 
 
