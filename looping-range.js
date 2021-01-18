@@ -12,41 +12,35 @@ The function should return an empty array [] if given incorrect parameters, such
     step being 0, or negative
 */
 
-
-
-
 let array = [];
-
 function range(start, end, step) {
 
     if (start === undefined || end === undefined || step === undefined) {
         return array
-    } else if (start > end){
+    } else if (start > end) {
         return array
-    } else if (step <=0){
-        return arr
+    } else if (step <= 0) {
+        return array
     } else {
-        for (i=0; i<= end; i++){
+        for (i = 0; i <= end; i++) {
+            array.push(start)
+            start += step
 
 
-
-
-            
-        }
+        } return array
     }
 
 }
 
 
-
-
-
-
-
 //Test Cases
+
+
 /*
+
 console.log(range()) //output undefined
 console.log(range(0, 10, 2)); //output [ 0, 2, 4, 6, 8, 10 ]
 console.log(range(10, 30, 5)); //output [ 10, 15, 20, 25, 30 ]
 console.log(range(-5, 2, 3));   //output [ -5, -2, 1 ]
+
 */
