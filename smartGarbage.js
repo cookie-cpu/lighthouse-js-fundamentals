@@ -12,26 +12,26 @@ switch(trash){
 */
 
 
-
-function smartGarbage(trash, bins){
-  if(trash === 'waste'){
-    console.log('waste')
-  } else if (trash === 'recycling'){
-    console.log('recycling')
-  } else if (trash === 'compost'){
-    console.log('compost')
-  }  
+function smartGarbage(trash, bins) {
+  if (trash === 'waste') {
+    bins.waste++
+  } else if (trash === 'recycling') {
+    bins.recycling++
+  } else if (trash === 'compost') {
+    bins.compost++
+  } console.log(bins)
 }
 
 
 smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
-
+smartGarbage('trash', { waste: 10, recycling: 10, compost: 10 });
+smartGarbage('compost', { waste: 9, recycling: 8, compost: 3 });
 
 
 /* TEST CASES
 
 
-
+smartGarbage('recycling', { waste: 4, recycling: 2, compost: 5 });
 
 //returns
 {
