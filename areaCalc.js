@@ -8,21 +8,25 @@
     circle: π × radius2
 
 */
-
-
 function calculateRectangleArea(length, width) {
-  return length * width
+  if (length >= 1 && width >= 1) {
+    return length * width
+  }
   //rectangle: length × width
 }
 
 function calculateTriangleArea(base, height) {
-  return (base * height) / 2
+  if (base >= 1 && height >= 1) {
+    return (base * height) / 2
+  }
   //triangle: base × height / 2
 }
 
 function calculateCircleArea(radius) {
-  //circle: π × radius2
-  return Math.PI * (radius * radius)
+  if (radius >= 1) {
+    //circle: π × radius2
+    return Math.PI * (radius * radius)
+  }
 }
 
 console.log(calculateRectangleArea(10, 5));     // should print 50

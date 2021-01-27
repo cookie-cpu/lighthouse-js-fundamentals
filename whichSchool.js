@@ -26,4 +26,10 @@ function whichSchool(age) {
   }
 }
 
+whichSchool(0)
+whichSchool(1)
+whichSchool(12)
+whichSchool(13)
+whichSchool(17)
 whichSchool(18)
+whichSchool(20)

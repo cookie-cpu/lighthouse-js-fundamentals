@@ -5,8 +5,14 @@ sum them together
 */
 
 const sumLargestNumbers = function(data) {
-  for (num in data){
-    console.log(num)
+  for (i in data){
+    Math.max(data, data[i])
+
+
+
+
+
+    //console.log(data[i])
   }
 };
 
@@ -16,3 +22,4 @@ const sumLargestNumbers = function(data) {
 console.log(sumLargestNumbers([1, 10]));
 //console.log(sumLargestNumbers([1, 2, 3]));
 //console.log(sumLargestNumbers([10, 4, 34, 6, 92, 2]));
+

@@ -5,12 +5,6 @@ program that prints the numbers from 100 to 200 to the console with three except
     If the number is a multiple of 4, print the string "Lighthouse" instead of the number.
     If the number is a multiple of both 3 and 4, print the string "LoopyLighthouse" instead of the number.
 
-
-*/
-
-
-
-/*
 for (let i = 100; i <= 200; i++) {
   if (i / 3 === 0) {
     console.log("Loopy")
@@ -22,20 +16,20 @@ for (let i = 100; i <= 200; i++) {
     console.log(i)
   }
 }
+
 */
 
 
-for (i = 100; i <= 200; i++) {
-  if (i / 12 === 0) {
+for (let i = 100; i <= 200; i++) {
+  if (i % 12 === 0) {
     console.log("LoopyLighthouse")
-  } else if (i / 3 === 0) {
+  } else if (i % 3 === 0) {
     console.log("Loopy")
-  } else if (i / 4 === 0) {
+  } else if (i % 4 === 0) {
     console.log("Lighthouse")
   } else {
     console.log(i)
   }
 }
-
 
 
