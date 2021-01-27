@@ -29,10 +29,8 @@ const judgeVegetable = function (vegetables, metric) {
   for (i in vegetables) {
     console.log(values[i].submitter)
   }
-*/
 
-
-const judgeVegetable = function (vegetables, metric){
+  const judgeVegetable = function (vegetables, metric){
   //let name = '';
   //let mesasurement = metric;
   const values = Object.values(vegetables);
@@ -40,12 +38,36 @@ const judgeVegetable = function (vegetables, metric){
 
 
 }
-  
 
-    
+
+const judgeVegetable = function(vegetables, metric){
+  let num = 0;
+  for (item in vegetables){
+    if (vegetables[item][metric] > num){
+      return vegetables[item].submitter
+    }
+  }
+}
+  
+*/
+
+
+
+
+const judgeVegetable = function (vegetables, metric) {
+  let value = 0;
+  let submitter = '';
+
+  for (let i = 0; i < vegetables.length; i++) {
+    if (value < vegetables[i][metric]) {
+      value = vegetables[i][metric];
+      submitter = vegetables[i].submitter;
+    }
+  }
+  return submitter
+}
 
 //TEST CASES
-
 const metric = 'redness'
 const vegetables = [
   {
