@@ -19,7 +19,7 @@ function smartGarbage(trash, bins) {
     bins.recycling++
   } else if (trash === 'compost') {
     bins.compost++
-  } console.log(bins)
+  } return bins
 }
 
 

@@ -1,5 +1,4 @@
 /*
-
 carPassing(cars, speed) takes an array of car objects and the speed of a car 
 
 create a new object with a property called speed, 
@@ -9,6 +8,7 @@ We can retrieve the current time,
 for setting the time property, 
 by using the Date.now() function, which is built into JavaScript!
 */
+
 const speed = 38
 const cars = [
   {
@@ -25,24 +25,19 @@ const cars = [
   }
 ]
 
-
 const carPassing = function (cars, speed) {
   time = Date.now();
   cars.push(speed, time)
-  console.log(cars)
+  return (cars)
 }
 
-
-
-
-
+const carPassing = function (cars, speed) {
+  let car = {
+    time: Date.now(),
+    speed: speed
+  };
+  cars.push(car)
+  return (cars)
+}
 
 carPassing(cars, speed)
-/* //TEST CASES
-
-
-*/
-
-
-
-

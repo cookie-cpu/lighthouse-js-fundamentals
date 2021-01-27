@@ -6,16 +6,47 @@ For this challenge, we'll need to implement a function called judgeVegetable()th
 
 Our function must return the name of the person who submitted (vegetables.submitter) 
 the vegetable with the highest ranking in the provided category.
-*/
-
 
 const judgeVegetable = function (vegetables, metric) {
+  let name = vegetables[0].submitter;
+  let value = vegetables[0].metric;
+  console.log(name)
+  console.log(value)
+  for (let i =1; i <vegetables.length; i++){
+    if (vegetables[i][i] > value){
+      name = vegetables[i].submitter;
+    }
+  } return name
+}
+
+const judgeVegetable = function (vegetables, metric) {
+  let measure = metric
+  return measure
 }
 
 
 
-/* TEST CASES
+  for (i in vegetables) {
+    console.log(values[i].submitter)
+  }
+*/
 
+
+const judgeVegetable = function (vegetables, metric){
+  //let name = '';
+  //let mesasurement = metric;
+  const values = Object.values(vegetables);
+  console.log(values[0].submitter)
+
+
+}
+  
+
+    
+
+//TEST CASES
+
+const metric = 'redness'
 const vegetables = [
   {
     submitter: 'Old Man Franklin',
@@ -34,8 +65,4 @@ const vegetables = [
   }
 ]
 
-const metric = 'redness'
-
-judgeVegetable(vegetables, metric)
-
-*/
+console.log(judgeVegetable(vegetables, metric))
