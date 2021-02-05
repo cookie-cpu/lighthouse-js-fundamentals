@@ -13,9 +13,21 @@ const camelCase = function(input) {
 const makeCase = function(input, caseStlye) {
   if (caseStlye === "camel"){
     return camelCase(input)
-
+  } else if (caseStlye === "pascal"){
+    return("pascal")
+  } else if (caseStlye === "snake"){
+    return("snake")
+  } else if (caseStlye === "kebab"){
+    return("kebab")
+  }else if (caseStlye === "title"){
+    return("title")
+  }else if (caseStlye === "vowel"){
+    return("vowel")
+  }else if (caseStlye === "consonant"){
+    return("consonant")
+  }else if (caseStlye === "upper", "snake"){
+    return("upper snake")
   }
-  // Put your solution here
 }
 
 console.log(makeCase("this is a string", "camel"));
