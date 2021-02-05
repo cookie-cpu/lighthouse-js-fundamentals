@@ -25,6 +25,19 @@ const pascalCase = function(input){
   } return output
 }
 
+const snakeCase = function(input){
+  let output = "";
+  for (let i = 0; i < input.length; i++){
+    if (input[i] === " "){
+      output += input[i+1] = "_"
+      //output += input[i+1].toUpperCase();
+      i++;
+    } else {
+      output += input[i]
+    }
+  } return output 
+}
+
 
 const makeCase = function(input, caseStlye) {
   if (caseStlye === "camel"){
@@ -32,7 +45,7 @@ const makeCase = function(input, caseStlye) {
   } else if (caseStlye === "pascal"){
     return pascalCase(input)
   } else if (caseStlye === "snake"){
-    return("snake")
+    return snakeCase(input)
   } else if (caseStlye === "kebab"){
     return("kebab")
   }else if (caseStlye === "title"){
