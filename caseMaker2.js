@@ -10,11 +10,27 @@ const camelCase = function(input) {
   } return output  
 };
 
+const pascalCase = function(input){
+  let output = "";
+  if (input[0]){
+    output += input[0].toUpperCase();
+  }
+  for (let i = 0; i < input.length; i++){
+    if (input[i] === " "){
+      output += input[i+1].toUpperCase();
+      i++
+    } else {
+      output += input[i]
+    }
+  } return output
+}
+
+
 const makeCase = function(input, caseStlye) {
   if (caseStlye === "camel"){
     return camelCase(input)
   } else if (caseStlye === "pascal"){
-    return("pascal")
+    return pascalCase(input)
   } else if (caseStlye === "snake"){
     return("snake")
   } else if (caseStlye === "kebab"){
