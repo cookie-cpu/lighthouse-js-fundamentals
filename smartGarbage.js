@@ -1,7 +1,7 @@
 /*
     trash, is a string that will tell our function what type of item is being submitted.
-    bins, is an object with three properties (waste, recycling, and compost), which hold numerical value. 
-    Our function must increase the correct value in the bins object, 
+    bins, is an object with three properties (waste, recycling, and compost), which hold numerical value.
+    Our function must increase the correct value in the bins object,
     and then return the newly updated object.
 
 switch(trash){
@@ -14,12 +14,12 @@ switch(trash){
 
 function smartGarbage(trash, bins) {
   if (trash === 'waste') {
-    bins.waste++
+    bins.waste++;
   } else if (trash === 'recycling') {
-    bins.recycling++
+    bins.recycling++;
   } else if (trash === 'compost') {
-    bins.compost++
-  } return bins
+    bins.compost++;
+  } return bins;
 }
 
 

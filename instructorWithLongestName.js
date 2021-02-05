@@ -7,7 +7,7 @@ console.log(instructors[i])
 */
 
 
-const instructorWithLongestName = function (instructors) {
+const instructorWithLongestName = function(instructors) {
   let index = 0;
   let num = 0;
   for (i in instructors) {
@@ -17,7 +17,7 @@ const instructorWithLongestName = function (instructors) {
     }
   }
   return (instructors[index]);
-}
+};
 
 
 

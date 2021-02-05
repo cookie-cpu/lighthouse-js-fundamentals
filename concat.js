@@ -12,13 +12,13 @@ concat([ 5, 10 ], []); //output [ 5, 10 ]
 */
 
 
-function concat(arr1, arr2){
+function concat(arr1, arr2) {
   let output = [];
-  if (arr1 == undefined && arr2 == undefined){
-    return output
+  if (arr1 == undefined && arr2 == undefined) {
+    return output;
   } else {
-    let joined = arr1.concat(arr2)
-    return joined
+    let joined = arr1.concat(arr2);
+    return joined;
   }
 }
 

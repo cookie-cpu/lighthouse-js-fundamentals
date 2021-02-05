@@ -7,7 +7,7 @@
 */
 
 
- //Array declaration
+//Array declaration
 const ingredients = ["eggs", "milk", "flour", "sugar", "baking soda", "baking powder", "chocolate chips", "bananas"];
 
 
@@ -23,7 +23,7 @@ while (i < ingredients.length) {              //condition checks if index is hig
 // Write a for loop that prints out the contents of ingredients:
 
 for (i = 0; i <= ingredients.length; i++) {
-  console.log(ingredients[i])
+  console.log(ingredients[i]);
 
 }
 
@@ -33,7 +33,7 @@ for (i = 0; i <= ingredients.length; i++) {
 
 let reverse = ingredients.reverse();
 for (i = 0; i <= reverse.length; i++) {
-  console.log(reverse[i])
+  console.log(reverse[i]);
 
 }
 

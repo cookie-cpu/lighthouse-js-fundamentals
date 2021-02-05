@@ -8,8 +8,8 @@ const sumLargestNumbers = function(data) {
   let num1 = Math.max(...data); //assigns num1 to the largest number in the array
   data.splice(data.indexOf(num1), 1); //removes the number from the array
   let num2 = Math.max(...data); //assigns num2 to the next largest number in the array
- return num1 + num2; //returns the 2 highest values added together
-}
+  return num1 + num2; //returns the 2 highest values added together
+};
 
 
 //TEST CASES

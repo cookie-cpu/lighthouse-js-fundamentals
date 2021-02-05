@@ -10,14 +10,14 @@
 */
 function calculateRectangleArea(length, width) {
   if (length >= 1 && width >= 1) {
-    return length * width
+    return length * width;
   }
   //rectangle: length × width
 }
 
 function calculateTriangleArea(base, height) {
   if (base >= 1 && height >= 1) {
-    return (base * height) / 2
+    return (base * height) / 2;
   }
   //triangle: base × height / 2
 }
@@ -25,7 +25,7 @@ function calculateTriangleArea(base, height) {
 function calculateCircleArea(radius) {
   if (radius >= 1) {
     //circle: π × radius2
-    return Math.PI * (radius * radius)
+    return Math.PI * (radius * radius);
   }
 }
 

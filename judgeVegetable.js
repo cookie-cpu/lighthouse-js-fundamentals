@@ -1,10 +1,10 @@
 /*
 For this challenge, we'll need to implement a function called judgeVegetable()that will decide which
  vegetable is best based on a given judging characteristic.
-  Our function will receive two parameters: a list of veggies(as an array of objects), 
+  Our function will receive two parameters: a list of veggies(as an array of objects),
   and a characteristic to judge the veggies by (in the case of a tomato, either redness or plumpness).
 
-Our function must return the name of the person who submitted (vegetables.submitter) 
+Our function must return the name of the person who submitted (vegetables.submitter)
 the vegetable with the highest ranking in the provided category.
 
 const judgeVegetable = function (vegetables, metric) {
@@ -54,7 +54,7 @@ const judgeVegetable = function(vegetables, metric){
 
 
 
-const judgeVegetable = function (vegetables, metric) {
+const judgeVegetable = function(vegetables, metric) {
   let value = 0;
   let submitter = '';
 
@@ -64,11 +64,11 @@ const judgeVegetable = function (vegetables, metric) {
       submitter = vegetables[i].submitter;
     }
   }
-  return submitter
-}
+  return submitter;
+};
 
 //TEST CASES
-const metric = 'redness'
+const metric = 'redness';
 const vegetables = [
   {
     submitter: 'Old Man Franklin',
@@ -85,6 +85,6 @@ const vegetables = [
     redness: 4,
     plumpness: 3
   }
-]
+];
 
-console.log(judgeVegetable(vegetables, metric))
+console.log(judgeVegetable(vegetables, metric));

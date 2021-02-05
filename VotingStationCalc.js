@@ -20,18 +20,18 @@ function chooseStations(stations) {
 
   for (const station of stations) { //loops through each element in the stations[] array
 
-    const capacity = station[1] //defines a variable to handle the capacity element of the array
+    const capacity = station[1]; //defines a variable to handle the capacity element of the array
 
     if (capacity >= 20) { //check to see if the capacity element is over 20
 
-      const type = station[2] //defines a variable to handle the type of venue
+      const type = station[2]; //defines a variable to handle the type of venue
       if (type === 'school' || type === 'community centre') { //check to see if the type element is acceptable
-        acceptable.push(station[0]) //this pushes the name element to the acceptable[] array for output
+        acceptable.push(station[0]); //this pushes the name element to the acceptable[] array for output
 
       }
     }
   }
-  return acceptable
+  return acceptable;
 }
 
 

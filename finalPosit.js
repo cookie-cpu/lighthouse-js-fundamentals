@@ -10,29 +10,29 @@ west = x++
 
 const moves = ['north', 'north', 'west', 'west', 'north', 'east', 'north'];
 
-const finalPosition = function (moves) {
+const finalPosition = function(moves) {
   const position = [0, 0];
   //let x = position[0];
   //let y = position[1];
   for (move in moves) {
     if (moves[move] === "north") {
-      position[1]++
+      position[1]++;
       //console.log("north")
     } else if (moves[move] === "south") {
-      position[1]--
+      position[1]--;
       //console.log("south")
     } else if (moves[move] === "west") {
-      position[0]--
+      position[0]--;
       //console.log("west")
     } else if (moves[move] === "east") {
-      position[0]++
+      position[0]++;
       //console.log("east")
     }
   }
-  return position
-}
+  return position;
+};
 
-console.log(finalPosition(moves))
+console.log(finalPosition(moves));
 
 /*
 function finalPosition(moves) {

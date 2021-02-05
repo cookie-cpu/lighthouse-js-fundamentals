@@ -13,14 +13,14 @@ The function should return an empty array [] if given incorrect parameters, such
 
 
 function range(start, end, step) {
-    let array = [];
-    if (start === undefined || end === undefined || step === undefined || start > end || step <= 0) {
-        return array
-    } else {
-        for (var i = start; i <= end; i = i + step) {
-            array.push(i)
-        }
-    } return array
+  let array = [];
+  if (start === undefined || end === undefined || step === undefined || start > end || step <= 0) {
+    return array;
+  } else {
+    for (let i = start; i <= end; i = i + step) {
+      array.push(i);
+    }
+  } return array;
 }
 
 
@@ -28,7 +28,7 @@ function range(start, end, step) {
 
 
 //Test Cases
-console.log(range()) //output undefined
+console.log(range()); //output undefined
 console.log(range(0, 10, 2)); //output [ 0, 2, 4, 6, 8, 10 ]
 console.log(range(10, 30, 5)); //output [ 10, 15, 20, 25, 30 ]
 console.log(range(-5, 2, 3));   //output [ -5, -2, 1 ]
