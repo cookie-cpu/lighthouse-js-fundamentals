@@ -15,7 +15,7 @@ const pascalCase = function(input){
   if (input[0]){
     output += input[0].toUpperCase();
   }
-  for (let i = 0; i < input.length; i++){
+  for (let i = 1; i < input.length; i++){
     if (input[i] === " "){
       output += input[i+1].toUpperCase();
       i++
