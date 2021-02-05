@@ -38,6 +38,19 @@ const snakeCase = function(input) {
   } return output;
 };
 
+const kebabCase = function(input) {
+  let output = "";
+  for (let i = 0; i < input.length; i++) {
+    if (input[i] === " ") {
+      let num = input[i];
+      num = "-"
+      output += num 
+    } else {
+      output += input[i];
+    }
+  } return output;
+};
+
 
 const makeCase = function(input, caseStlye) {
   if (caseStlye === "camel") {
@@ -47,7 +60,7 @@ const makeCase = function(input, caseStlye) {
   } else if (caseStlye === "snake") {
     return snakeCase(input);
   } else if (caseStlye === "kebab") {
-    return ("kebab");
+    return kebabCase(input);
   } else if (caseStlye === "title") {
     return ("title");
   } else if (caseStlye === "vowel") {
