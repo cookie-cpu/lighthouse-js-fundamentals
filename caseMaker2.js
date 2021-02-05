@@ -29,9 +29,9 @@ const snakeCase = function(input) {
   let output = "";
   for (let i = 0; i < input.length; i++) {
     if (input[i] === " ") {
-      output += input[i + 1] = "_";
-      //output += input[i+1].toUpperCase();
-      i++;
+      let num = input[i];
+      num = "_"
+      output += num 
     } else {
       output += input[i];
     }
@@ -59,11 +59,11 @@ const makeCase = function(input, caseStlye) {
   }
 };
 
-console.log(makeCase("this is a string", "camel"));
-console.log(makeCase("this is a string", "pascal"));
-console.log(makeCase("this is a string", "snake"));
-console.log(makeCase("this is a string", "kebab"));
-console.log(makeCase("this is a string", "title"));
-console.log(makeCase("this is a string", "vowel"));
-console.log(makeCase("this is a string", "consonant"));
-console.log(makeCase("this is a string", ["upper", "snake"]));
+console.log("camelCase:                  ", makeCase("this is a string", "camel"));
+console.log("PascalCase:                 ", makeCase("this is a string", "pascal"));
+console.log("snake_case:                 ", makeCase("this is a string", "snake"));
+console.log("kebab-case:                 ", makeCase("this is a string", "kebab"));
+console.log("Title Case:                 ", makeCase("this is a string", "title"));
+console.log("vowelCase:                  ", makeCase("this is a string", "vowel"));
+console.log("consonantCase:              ", makeCase("this is a string", "consonant"));
+console.log("upperCase and snakeCase:    ", makeCase("this is a string", ["upper", "snake"]));
